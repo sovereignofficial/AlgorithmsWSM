@@ -6,7 +6,7 @@ const insertionSortResults = {
     inverselySorted: [917.249, 3556, 8078, 14196, 22648]
 };
 
-// Create arrays for selection sort results
+// Selection Sort Results
 const selectionSortResults = {
     notSorted: [230.03, 905.622, 3520, 8333, 15508],
     sorted: [242.661, 956.86, 3265, 7249, 13533],
@@ -59,33 +59,3 @@ console.log("Standart Deviation Insertion:",insertionSortStandardDeviation);
 console.log("Standart Deviation Selection:",selectionSortStandardDeviation);
 
 
-// Merge Sort Average Times: {
-//     notSorted: 4626.465200000001,
-//     sorted: 3935.2322,
-//     inverselySorted: 4007.7771999999995
-//   }
-//   Merge Sort Standard Deviation: {
-//     notSorted: 3714.342032264956,
-//     sorted: 3155.234845708978,
-//     inverselySorted: 3159.904114656038
-//   }
-//   Insertion Sort Average Times: {
-//     notSorted: 4899.7294,
-//     sorted: 3935.2322,
-//     inverselySorted: 4007.7771999999995
-//   }
-//   Insertion Sort Standard Deviation: {
-//     notSorted: 3810.281774055226,
-//     sorted: 3933.7790553426307,
-//     inverselySorted: 9773.228439887758
-//   }
-//   Selection Sort Average Times: {
-//     notSorted: 5699.330400000001,
-//     sorted: 5049.3042000000005,
-//     inverselySorted: 4952.823200000001
-//   }
-//   Selection Sort Standard Deviation: {
-//     notSorted: 5670.7774240568315,
-//     sorted: 4895.863884950904,
-//     inverselySorted: 4954.312941233099
-//   }
