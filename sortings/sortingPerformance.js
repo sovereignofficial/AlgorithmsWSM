@@ -112,63 +112,59 @@ const SELECTINPUT4 = 150_000;
 const SELECTINPUT5 = 200_000;
 
 
-// Merge Sort
-measureCallback(mergeSort, generateRandomNumbers(COMMONINP1), "not sorted");
-measureCallback(mergeSort, generateRandomNumbers(COMMONINP2), "not sorted");
-measureCallback(mergeSort, generateRandomNumbers(COMMONINP3), "not sorted");
-measureCallback(mergeSort, generateRandomNumbers(COMMONINP4), "not sorted");
-measureCallback(mergeSort, generateRandomNumbers(COMMONINP5), "not sorted");
+// // Merge Sort
+// measureCallback(mergeSort, generateRandomNumbers(MERGEINPUT1), "not sorted");
+// measureCallback(mergeSort, generateRandomNumbers(MERGEINPUT2), "not sorted");
+// measureCallback(mergeSort, generateRandomNumbers(MERGEINPUT3), "not sorted");
+// measureCallback(mergeSort, generateRandomNumbers(MERGEINPUT4), "not sorted");
+// measureCallback(mergeSort, generateRandomNumbers(MERGEINPUT5), "not sorted");
 
-measureCallback(mergeSort, generateSortedNumbers(COMMONINP1), "sorted");
-measureCallback(mergeSort, generateSortedNumbers(COMMONINP2), "sorted");
-measureCallback(mergeSort, generateSortedNumbers(COMMONINP3), "sorted");
-measureCallback(mergeSort, generateSortedNumbers(COMMONINP4), "sorted");
-measureCallback(mergeSort, generateSortedNumbers(COMMONINP5), "sorted");
+// measureCallback(mergeSort, generateSortedNumbers(MERGEINPUT1), "sorted");
+// measureCallback(mergeSort, generateSortedNumbers(MERGEINPUT2), "sorted");
+// measureCallback(mergeSort, generateSortedNumbers(MERGEINPUT3), "sorted");
+// measureCallback(mergeSort, generateSortedNumbers(MERGEINPUT4), "sorted");
+// measureCallback(mergeSort, generateSortedNumbers(MERGEINPUT5), "sorted");
 
-measureCallback(mergeSort, generateInverselySortedNumbers(COMMONINP1), "inversely sorted");
-measureCallback(mergeSort, generateInverselySortedNumbers(COMMONINP2), "inversely sorted");
-measureCallback(mergeSort, generateInverselySortedNumbers(COMMONINP3), "inversely sorted");
-measureCallback(mergeSort, generateInverselySortedNumbers(COMMONINP4), "inversely sorted");
-measureCallback(mergeSort, generateInverselySortedNumbers(COMMONINP5), "inversely sorted");
+// measureCallback(mergeSort, generateInverselySortedNumbers(MERGEINPUT1), "inversely sorted");
+// measureCallback(mergeSort, generateInverselySortedNumbers(MERGEINPUT2), "inversely sorted");
+// measureCallback(mergeSort, generateInverselySortedNumbers(MERGEINPUT3), "inversely sorted");
+// measureCallback(mergeSort, generateInverselySortedNumbers(MERGEINPUT4), "inversely sorted");
+// measureCallback(mergeSort, generateInverselySortedNumbers(MERGEINPUT5), "inversely sorted");
 
+// // Insertion Sort
+// measureCallback(insertionSort, generateRandomNumbers(INSERTINPUT1), "not sorted");
+// measureCallback(insertionSort, generateRandomNumbers(INSERTINPUT2), "not sorted");
+// measureCallback(insertionSort, generateRandomNumbers(INSERTINPUT3), "not sorted");
+// measureCallback(insertionSort, generateRandomNumbers(INSERTINPUT4), "not sorted");
+// measureCallback(insertionSort, generateRandomNumbers(INSERTINPUT5), "not sorted");
 
+// measureCallback(insertionSort, generateSortedNumbers(INSERTINPUT1), "sorted");
+// measureCallback(insertionSort, generateSortedNumbers(INSERTINPUT2), "sorted");
+// measureCallback(insertionSort, generateSortedNumbers(INSERTINPUT3), "sorted");
+// measureCallback(insertionSort, generateSortedNumbers(INSERTINPUT4), "sorted");
+// measureCallback(insertionSort, generateSortedNumbers(INSERTINPUT5), "sorted");
 
-// Insertion 
-measureCallback(insertionSort, generateRandomNumbers(COMMONINP1), "not sorted");
-measureCallback(insertionSort, generateRandomNumbers(COMMONINP2), "not sorted");
-measureCallback(insertionSort, generateRandomNumbers(COMMONINP3), "not sorted");
-measureCallback(insertionSort, generateRandomNumbers(COMMONINP4), "not sorted");
-measureCallback(insertionSort, generateRandomNumbers(COMMONINP5), "not sorted");
-
-
-measureCallback(insertionSort, generateSortedNumbers(COMMONINP1), "sorted");
-measureCallback(insertionSort, generateSortedNumbers(COMMONINP2), "sorted");
-measureCallback(insertionSort, generateSortedNumbers(COMMONINP3), "sorted");
-measureCallback(insertionSort, generateSortedNumbers(COMMONINP4), "sorted");
-measureCallback(insertionSort, generateSortedNumbers(COMMONINP5), "sorted");
-
-measureCallback(insertionSort, generateInverselySortedNumbers(COMMONINP1), "inversely sorted");
-measureCallback(insertionSort, generateInverselySortedNumbers(COMMONINP2), "inversely sorted");
-measureCallback(insertionSort, generateInverselySortedNumbers(COMMONINP3), "inversely sorted");
-measureCallback(insertionSort, generateInverselySortedNumbers(COMMONINP4), "inversely sorted");
-measureCallback(insertionSort, generateInverselySortedNumbers(COMMONINP5), "inversely sorted");
-
+// measureCallback(insertionSort, generateInverselySortedNumbers(INSERTINPUT1), "inversely sorted");
+// measureCallback(insertionSort, generateInverselySortedNumbers(INSERTINPUT2), "inversely sorted");
+// measureCallback(insertionSort, generateInverselySortedNumbers(INSERTINPUT3), "inversely sorted");
+// measureCallback(insertionSort, generateInverselySortedNumbers(INSERTINPUT4), "inversely sorted");
+// measureCallback(insertionSort, generateInverselySortedNumbers(INSERTINPUT5), "inversely sorted");
 
 // Selection Sort
-measureCallback(selectionSort, generateRandomNumbers(COMMONINP1), "not sorted");
-measureCallback(selectionSort, generateRandomNumbers(COMMONINP2), "not sorted");
-measureCallback(selectionSort, generateRandomNumbers(COMMONINP3), "not sorted");
-measureCallback(selectionSort, generateRandomNumbers(COMMONINP4), "not sorted");
-measureCallback(selectionSort, generateRandomNumbers(COMMONINP5), "not sorted");
+measureCallback(selectionSort, generateRandomNumbers(SELECTINPUT1), "not sorted");
+measureCallback(selectionSort, generateRandomNumbers(SELECTINPUT2), "not sorted");
+measureCallback(selectionSort, generateRandomNumbers(SELECTINPUT3), "not sorted");
+measureCallback(selectionSort, generateRandomNumbers(SELECTINPUT4), "not sorted");
+measureCallback(selectionSort, generateRandomNumbers(SELECTINPUT5), "not sorted");
 
-measureCallback(selectionSort, generateSortedNumbers(COMMONINP1), "sorted");
-measureCallback(selectionSort, generateSortedNumbers(COMMONINP2), "sorted");
-measureCallback(selectionSort, generateSortedNumbers(COMMONINP3), "sorted");
-measureCallback(selectionSort, generateSortedNumbers(COMMONINP4), "sorted");
-measureCallback(selectionSort, generateSortedNumbers(COMMONINP5), "sorted");
+measureCallback(selectionSort, generateSortedNumbers(SELECTINPUT1), "sorted");
+measureCallback(selectionSort, generateSortedNumbers(SELECTINPUT2), "sorted");
+measureCallback(selectionSort, generateSortedNumbers(SELECTINPUT3), "sorted");
+measureCallback(selectionSort, generateSortedNumbers(SELECTINPUT4), "sorted");
+measureCallback(selectionSort, generateSortedNumbers(SELECTINPUT5), "sorted");
 
-measureCallback(selectionSort, generateInverselySortedNumbers(COMMONINP1), "inversely sorted");
-measureCallback(selectionSort, generateInverselySortedNumbers(COMMONINP2), "inversely sorted");
-measureCallback(selectionSort, generateInverselySortedNumbers(COMMONINP3), "inversely sorted");
-measureCallback(selectionSort, generateInverselySortedNumbers(COMMONINP4), "inversely sorted");
-measureCallback(selectionSort, generateInverselySortedNumbers(COMMONINP5), "inversely sorted");
+measureCallback(selectionSort, generateInverselySortedNumbers(SELECTINPUT1), "inversely sorted");
+measureCallback(selectionSort, generateInverselySortedNumbers(SELECTINPUT2), "inversely sorted");
+measureCallback(selectionSort, generateInverselySortedNumbers(SELECTINPUT3), "inversely sorted");
+measureCallback(selectionSort, generateInverselySortedNumbers(SELECTINPUT4), "inversely sorted");
+measureCallback(selectionSort, generateInverselySortedNumbers(SELECTINPUT5), "inversely sorted");
