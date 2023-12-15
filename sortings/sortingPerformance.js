@@ -150,21 +150,39 @@ const SELECTINPUT5 = 200_000;
 // measureCallback(insertionSort, generateInverselySortedNumbers(INSERTINPUT4), "inversely sorted");
 // measureCallback(insertionSort, generateInverselySortedNumbers(INSERTINPUT5), "inversely sorted");
 
-// Selection Sort
-measureCallback(selectionSort, generateRandomNumbers(SELECTINPUT1), "not sorted");
-measureCallback(selectionSort, generateRandomNumbers(SELECTINPUT2), "not sorted");
-measureCallback(selectionSort, generateRandomNumbers(SELECTINPUT3), "not sorted");
-measureCallback(selectionSort, generateRandomNumbers(SELECTINPUT4), "not sorted");
-measureCallback(selectionSort, generateRandomNumbers(SELECTINPUT5), "not sorted");
+// // Selection Sort
+// measureCallback(selectionSort, generateRandomNumbers(SELECTINPUT1), "not sorted");
+// measureCallback(selectionSort, generateRandomNumbers(SELECTINPUT2), "not sorted");
+// measureCallback(selectionSort, generateRandomNumbers(SELECTINPUT3), "not sorted");
+// measureCallback(selectionSort, generateRandomNumbers(SELECTINPUT4), "not sorted");
+// measureCallback(selectionSort, generateRandomNumbers(SELECTINPUT5), "not sorted");
 
-measureCallback(selectionSort, generateSortedNumbers(SELECTINPUT1), "sorted");
-measureCallback(selectionSort, generateSortedNumbers(SELECTINPUT2), "sorted");
-measureCallback(selectionSort, generateSortedNumbers(SELECTINPUT3), "sorted");
-measureCallback(selectionSort, generateSortedNumbers(SELECTINPUT4), "sorted");
-measureCallback(selectionSort, generateSortedNumbers(SELECTINPUT5), "sorted");
+// measureCallback(selectionSort, generateSortedNumbers(SELECTINPUT1), "sorted");
+// measureCallback(selectionSort, generateSortedNumbers(SELECTINPUT2), "sorted");
+// measureCallback(selectionSort, generateSortedNumbers(SELECTINPUT3), "sorted");
+// measureCallback(selectionSort, generateSortedNumbers(SELECTINPUT4), "sorted");
+// measureCallback(selectionSort, generateSortedNumbers(SELECTINPUT5), "sorted");
 
-measureCallback(selectionSort, generateInverselySortedNumbers(SELECTINPUT1), "inversely sorted");
-measureCallback(selectionSort, generateInverselySortedNumbers(SELECTINPUT2), "inversely sorted");
-measureCallback(selectionSort, generateInverselySortedNumbers(SELECTINPUT3), "inversely sorted");
-measureCallback(selectionSort, generateInverselySortedNumbers(SELECTINPUT4), "inversely sorted");
-measureCallback(selectionSort, generateInverselySortedNumbers(SELECTINPUT5), "inversely sorted");
+// measureCallback(selectionSort, generateInverselySortedNumbers(SELECTINPUT1), "inversely sorted");
+// measureCallback(selectionSort, generateInverselySortedNumbers(SELECTINPUT2), "inversely sorted");
+// measureCallback(selectionSort, generateInverselySortedNumbers(SELECTINPUT3), "inversely sorted");
+// measureCallback(selectionSort, generateInverselySortedNumbers(SELECTINPUT4), "inversely sorted");
+// measureCallback(selectionSort, generateInverselySortedNumbers(SELECTINPUT5), "inversely sorted");
+
+// PART 6:Experimentally determine how many unsorted data - materializing at the end of the sorted string - will still allow the insertion sort to be faster than the merge sort. 
+let sizes = [10, 100, 500, 1000, 5000, 10000, 50000, 100000];
+let results = [];
+
+sizes.forEach(size => {
+   let randomNumbers = generateRandomNumbers(size);
+
+   let insertionTime = measureCallback(insertionSort, randomNumbers, 'random');
+   let mergeTime = measureCallback(mergeSort, randomNumbers, 'random');
+
+   results.push({
+       size: size,
+       insertionTime: insertionTime,
+       mergeTime: mergeTime
+   });
+
+});
